@@ -13,12 +13,13 @@ private:
 	Logger(){};
 
 public:
-	static Logger& getInstance(){
+	static Logger& get_instance(){
 		static Logger instance;
 		return instance;
 	};
 
-
+	static log_dev(std::string);
+	
 
 
 };
